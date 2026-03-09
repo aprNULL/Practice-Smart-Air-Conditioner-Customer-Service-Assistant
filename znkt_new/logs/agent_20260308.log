@@ -1,0 +1,440 @@
+2026-03-08 15:03:45 - agent - INFO - logger_hander.py:99 - 信息日志
+2026-03-08 15:03:45 - agent - ERROR - logger_hander.py:100 - 错误日志
+2026-03-08 15:03:45 - agent - WARNING - logger_hander.py:101 - 警告日志
+2026-03-08 15:03:45 - agent - DEBUG - logger_hander.py:102 - 测试日志
+2026-03-08 15:39:16 - agent - ERROR - prompt_loader.py:26 - [load_rag_prompt]解析系统提示词文件路径失败。
+2026-03-08 16:13:12 - agent - ERROR - vector_store.py:95 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\故障排除.txt 加载失败：Error loading D:\PyCharm 2024.2.3\ai\data\故障排除.txt
+Traceback (most recent call last):
+  File "D:\python\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 20: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharm 2024.2.3\ai\rag\vector_store.py", line 76, in load_document
+    documents: list[Document] = get_file_documents(path)
+                                ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\PyCharm 2024.2.3\ai\rag\vector_store.py", line 51, in get_file_documents
+    return txt_loader(read_path)
+  File "D:\PyCharm 2024.2.3\ai\utils\file_handler.py", line 78, in txt_loader
+    return TextLoader(filepath).load()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\python\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\PyCharm 2024.2.3\ai\data\故障排除.txt
+2026-03-08 16:13:12 - agent - ERROR - vector_store.py:95 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 加载失败：Error loading D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt
+Traceback (most recent call last):
+  File "D:\python\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 19: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharm 2024.2.3\ai\rag\vector_store.py", line 76, in load_document
+    documents: list[Document] = get_file_documents(path)
+                                ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\PyCharm 2024.2.3\ai\rag\vector_store.py", line 51, in get_file_documents
+    return txt_loader(read_path)
+  File "D:\PyCharm 2024.2.3\ai\utils\file_handler.py", line 78, in txt_loader
+    return TextLoader(filepath).load()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\python\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt
+2026-03-08 16:13:12 - agent - ERROR - vector_store.py:95 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 加载失败：Error loading D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt
+Traceback (most recent call last):
+  File "D:\python\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 19: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharm 2024.2.3\ai\rag\vector_store.py", line 76, in load_document
+    documents: list[Document] = get_file_documents(path)
+                                ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\PyCharm 2024.2.3\ai\rag\vector_store.py", line 51, in get_file_documents
+    return txt_loader(read_path)
+  File "D:\PyCharm 2024.2.3\ai\utils\file_handler.py", line 78, in txt_loader
+    return TextLoader(filepath).load()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\python\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt
+2026-03-08 16:13:12 - agent - ERROR - vector_store.py:95 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\维护保养.txt 加载失败：Error loading D:\PyCharm 2024.2.3\ai\data\维护保养.txt
+Traceback (most recent call last):
+  File "D:\python\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xa1 in position 31: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharm 2024.2.3\ai\rag\vector_store.py", line 76, in load_document
+    documents: list[Document] = get_file_documents(path)
+                                ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\PyCharm 2024.2.3\ai\rag\vector_store.py", line 51, in get_file_documents
+    return txt_loader(read_path)
+  File "D:\PyCharm 2024.2.3\ai\utils\file_handler.py", line 78, in txt_loader
+    return TextLoader(filepath).load()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\python\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\PyCharm 2024.2.3\ai\data\维护保养.txt
+2026-03-08 16:13:12 - agent - ERROR - vector_store.py:95 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\选购指南.txt 加载失败：Error loading D:\PyCharm 2024.2.3\ai\data\选购指南.txt
+Traceback (most recent call last):
+  File "D:\python\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xa1 in position 31: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PyCharm 2024.2.3\ai\rag\vector_store.py", line 76, in load_document
+    documents: list[Document] = get_file_documents(path)
+                                ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\PyCharm 2024.2.3\ai\rag\vector_store.py", line 51, in get_file_documents
+    return txt_loader(read_path)
+  File "D:\PyCharm 2024.2.3\ai\utils\file_handler.py", line 78, in txt_loader
+    return TextLoader(filepath).load()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\python\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\PyCharm 2024.2.3\ai\data\选购指南.txt
+2026-03-08 16:15:23 - agent - INFO - vector_store.py:92 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\故障排除.txt 内容加载成功
+2026-03-08 16:15:27 - agent - INFO - vector_store.py:92 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 内容加载成功
+2026-03-08 16:15:30 - agent - INFO - vector_store.py:92 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 内容加载成功
+2026-03-08 16:15:33 - agent - INFO - vector_store.py:92 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\维护保养.txt 内容加载成功
+2026-03-08 16:15:36 - agent - INFO - vector_store.py:92 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\选购指南.txt 内容加载成功
+2026-03-08 16:16:44 - agent - INFO - vector_store.py:72 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\故障排除.txt 内容已经存在于知识库，跳过
+2026-03-08 16:16:44 - agent - INFO - vector_store.py:72 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 内容已经存在于知识库，跳过
+2026-03-08 16:16:44 - agent - INFO - vector_store.py:72 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 内容已经存在于知识库，跳过
+2026-03-08 16:16:44 - agent - INFO - vector_store.py:72 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\维护保养.txt 内容已经存在于知识库，跳过
+2026-03-08 16:16:44 - agent - INFO - vector_store.py:72 - [加载知识库] D:\PyCharm 2024.2.3\ai\data\选购指南.txt 内容已经存在于知识库，跳过
+2026-03-08 20:05:31 - agent - WARNING - agent_tools.py:85 - [fetch_external_data]未能检索到用户:1021在2025-01的数据。
+2026-03-08 20:30:43 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-08 20:30:43 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:30:43 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 空调在我所在地区的气温下如何保养
+2026-03-08 20:30:50 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_user_location
+2026-03-08 20:30:50 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 20:30:50 - agent - INFO - middleware.py:21 - [tool monitor]工具get_user_location调用成功
+2026-03-08 20:30:50 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-08 20:30:50 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:30:50 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 杭州
+2026-03-08 20:30:55 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_weather
+2026-03-08 20:30:55 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'city': '杭州'}
+2026-03-08 20:30:55 - agent - INFO - middleware.py:21 - [tool monitor]工具get_weather调用成功
+2026-03-08 20:30:55 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 20:30:55 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:30:55 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 城市杭州天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时内降雨概率极低
+2026-03-08 20:31:01 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 20:31:01 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '杭州26度50%湿度环境下空调保养方法'}
+2026-03-08 20:31:04 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 20:31:04 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-08 20:31:04 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:31:04 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 杭州26度50%湿度属于温和干燥环境，参考资料中未针对此类具体温湿度条件提供专门的空调保养方法。可参考通用维护建议：定期清洗滤网、检查制冷剂量、保持通风散热，但无直接对应条款。
+2026-03-08 20:34:31 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-08 20:34:31 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:34:31 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 给我生成我的使用报告
+2026-03-08 20:34:35 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_user_id
+2026-03-08 20:34:35 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 20:34:35 - agent - INFO - middleware.py:21 - [tool monitor]工具get_user_id调用成功
+2026-03-08 20:34:35 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-08 20:34:35 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:34:35 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 1001
+2026-03-08 20:34:37 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_current_month
+2026-03-08 20:34:37 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 20:34:37 - agent - INFO - middleware.py:21 - [tool monitor]工具get_current_month调用成功
+2026-03-08 20:34:37 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 20:34:37 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:34:37 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 2025-03
+2026-03-08 20:34:40 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: fill_context_for_report
+2026-03-08 20:34:40 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 20:34:40 - agent - INFO - middleware.py:21 - [tool monitor]工具fill_context_for_report调用成功
+2026-03-08 20:34:40 - agent - INFO - middleware.py:24 - [tool monitor]fill_context_for_report工具被调用，注入上下文 report=True
+2026-03-08 20:34:40 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-08 20:34:40 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:34:40 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: fill_context_for_report已调用
+2026-03-08 20:34:43 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: fetch_external_data
+2026-03-08 20:34:43 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'user_id': '1001', 'month': '2025-03'}
+2026-03-08 20:34:43 - agent - INFO - middleware.py:21 - [tool monitor]工具fetch_external_data调用成功
+2026-03-08 20:34:43 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有9条消息，消息如下：
+2026-03-08 20:34:43 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:34:43 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: {"房间特征": "30㎡公寓 | 西晒 | 独居 | 卧室", "运行效率": "制冷/热切换:正常\\n日均运行:4小时\\n月用电量:100度\\n温差:±1℃", "耗材": "滤网寿命:剩余70天\\n制冷剂:充足\\n电辅热:未使用\\n压缩机状态:正常", "对比": "优于80%同户型用户"}
+2026-03-08 20:34:45 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 20:34:45 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '空调滤网保养和节能使用建议'}
+2026-03-08 20:34:49 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 20:34:49 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有11条消息，消息如下：
+2026-03-08 20:34:49 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:34:49 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 空调滤网建议每2周清洗一次，环境灰尘大时每周清洗；可取下用软毛刷轻刷或清水冲洗，晾干后装回（勿暴晒）。初效滤网每月清洗一次，破损需立即更换；高效HEPA滤网每3-6个月更换，污染严重时提前更换；活性炭除臭滤网每6个月更换或异味明显时更换。为节能使用，应保证滤网清洁以维持通风顺畅，每周检查室外机周围无杂物确保散热良好，长时间不用时开启送风模式运行2小时吹干内部湿气后断电。
+2026-03-08 20:45:25 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-08 20:45:25 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:45:25 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 在我所在地区的天气下，该怎么使用空调
+2026-03-08 20:45:30 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_user_location
+2026-03-08 20:45:30 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 20:45:30 - agent - INFO - middleware.py:21 - [tool monitor]工具get_user_location调用成功
+2026-03-08 20:45:30 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-08 20:45:30 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:45:30 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 合肥
+2026-03-08 20:45:35 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_weather
+2026-03-08 20:45:35 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'city': '合肥'}
+2026-03-08 20:45:35 - agent - INFO - middleware.py:21 - [tool monitor]工具get_weather调用成功
+2026-03-08 20:45:35 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 20:45:35 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:45:35 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 城市合肥天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时内降雨概率极低
+2026-03-08 20:45:42 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 20:45:42 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '26度天气空调使用建议'}
+2026-03-08 20:45:49 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 20:45:50 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-08 20:45:50 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:45:50 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 26℃是夏季空调推荐设定温度，兼顾舒适与节能。若感觉偏冷，可调高至27-28℃，或开启防直吹、睡眠模式，适当调整风速。体感温度受湿度和风速影响，建议结合使用环境调节。
+2026-03-08 20:48:02 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-08 20:48:02 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:48:02 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 帮我生成我的使用报告
+2026-03-08 20:48:06 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_user_id
+2026-03-08 20:48:06 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 20:48:06 - agent - INFO - middleware.py:21 - [tool monitor]工具get_user_id调用成功
+2026-03-08 20:48:06 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-08 20:48:06 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:48:06 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 1009
+2026-03-08 20:48:08 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_current_month
+2026-03-08 20:48:08 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 20:48:08 - agent - INFO - middleware.py:21 - [tool monitor]工具get_current_month调用成功
+2026-03-08 20:48:08 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 20:48:08 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:48:08 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 2025-07
+2026-03-08 20:48:11 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: fill_context_for_report
+2026-03-08 20:48:11 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 20:48:11 - agent - INFO - middleware.py:21 - [tool monitor]工具fill_context_for_report调用成功
+2026-03-08 20:48:11 - agent - INFO - middleware.py:24 - [tool monitor]fill_context_for_report工具被调用，注入上下文 report=True
+2026-03-08 20:48:11 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-08 20:48:11 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:48:11 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: fill_context_for_report已调用
+2026-03-08 20:48:15 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: fetch_external_data
+2026-03-08 20:48:15 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'user_id': '1009', 'month': '2025-07'}
+2026-03-08 20:48:15 - agent - INFO - middleware.py:21 - [tool monitor]工具fetch_external_data调用成功
+2026-03-08 20:48:17 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有9条消息，消息如下：
+2026-03-08 20:48:17 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:48:17 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: {"房间特征": "70㎡两居 | 南北通透 | 养狗", "运行效率": "制冷效果:良好\\n日均运行:7.5小时\\n月用电量:190度\\n温差:±1℃", "耗材": "滤网寿命:剩余55天\\n制冷剂:充足\\n电辅热:未使用\\n压缩机状态:正常", "对比": "优于同类20%"}
+2026-03-08 20:48:19 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 20:48:19 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '智能空调滤网清洗和保养建议'}
+2026-03-08 20:48:24 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 20:48:25 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有11条消息，消息如下：
+2026-03-08 20:48:25 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:48:25 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 智能空调滤网建议每2周清洗一次，环境灰尘大时每周清洗；也可按每月一次的频率进行常规维护。清洗时取下滤网，用软毛刷轻刷或清水冲洗，晾干后装回，避免暴晒。若滤网破损应立即更换。高效HEPA滤网每3-6个月更换，活性炭除臭滤网每6个月更换或在异味明显时更换。每年建议由专业人员深度清洗蒸发器等内部部件。
+2026-03-08 20:48:29 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 20:48:29 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '空调节能使用技巧'}
+2026-03-08 20:48:35 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 20:48:36 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有13条消息，消息如下：
+2026-03-08 20:48:36 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 20:48:36 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 空调节能使用技巧包括：夏季设定温度在26-28℃，冬季设定在20-22℃，每调高1℃可节电7%-10%；使用时适当配合风扇，可提高舒适度并节省电能；避免长时间连续运行，每运行8小时应休息30分钟；避免在空调室外机附近晾晒衣物，以免影响散热；定期清洗滤网并保持设备清洁，有助于维持高效运行。
+2026-03-08 21:27:33 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-08 21:27:33 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 21:27:33 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 给我生成我的使用报告
+2026-03-08 21:27:36 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_user_id
+2026-03-08 21:27:36 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 21:27:36 - agent - INFO - middleware.py:21 - [tool monitor]工具get_user_id调用成功
+2026-03-08 21:27:36 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-08 21:27:36 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 21:27:36 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 1008
+2026-03-08 21:27:39 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_current_month
+2026-03-08 21:27:39 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 21:27:39 - agent - INFO - middleware.py:21 - [tool monitor]工具get_current_month调用成功
+2026-03-08 21:27:39 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 21:27:39 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 21:27:39 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 2025-06
+2026-03-08 21:27:42 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: fill_context_for_report
+2026-03-08 21:27:42 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 21:27:42 - agent - INFO - middleware.py:21 - [tool monitor]工具fill_context_for_report调用成功
+2026-03-08 21:27:42 - agent - INFO - middleware.py:24 - [tool monitor]fill_context_for_report工具被调用，注入上下文 report=True
+2026-03-08 21:27:42 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-08 21:27:42 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 21:27:42 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: fill_context_for_report已调用
+2026-03-08 21:27:44 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: fetch_external_data
+2026-03-08 21:27:44 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'user_id': '1008', 'month': '2025-06'}
+2026-03-08 21:27:44 - agent - INFO - middleware.py:21 - [tool monitor]工具fetch_external_data调用成功
+2026-03-08 21:27:44 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有9条消息，消息如下：
+2026-03-08 21:27:44 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 21:27:44 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: {"房间特征": "120㎡三居 | 西晒 | 三口之家 | 客厅大", "运行效率": "制冷效果:优秀\\n日均运行:11小时\\n月用电量:280度\\n温差:±0.5℃", "耗材": "滤网寿命:剩余55天\\n制冷剂:充足\\n电辅热:未使用\\n压缩机状态:正常", "对比": "西晒房间制冷效果佳"}
+2026-03-08 21:27:47 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 21:27:47 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '智能空调滤网保养和节能使用建议'}
+2026-03-08 21:27:55 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 21:27:55 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有11条消息，消息如下：
+2026-03-08 21:27:55 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 21:27:55 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 智能空调滤网保养建议：初效滤网每月清洗一次，破损需立即更换；高效HEPA滤网每3-6个月更换，污染严重时提前更换；活性炭除臭滤网每6个月更换，或在异味明显时更换。部分机型具备滤网清洗和更换提醒功能，可通过APP或机身指示灯提示。节能使用方面，可利用APP查看实时及历史用电量，辅助优化用电。
+2026-03-08 23:00:02 - agent - INFO - vector_store.py:86 - [向量库] 已删除文件 D:\PyCharm 2024.2.3\ai\data\故障排除.txt 对应的 64 个文档
+2026-03-08 23:00:07 - agent - INFO - vector_store.py:134 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\故障排除.txt 加载成功
+2026-03-08 23:00:07 - agent - INFO - vector_store.py:86 - [向量库] 已删除文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 对应的 48 个文档
+2026-03-08 23:00:10 - agent - INFO - vector_store.py:134 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 加载成功
+2026-03-08 23:00:10 - agent - INFO - vector_store.py:86 - [向量库] 已删除文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 对应的 42 个文档
+2026-03-08 23:00:14 - agent - INFO - vector_store.py:134 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 加载成功
+2026-03-08 23:00:14 - agent - INFO - vector_store.py:86 - [向量库] 已删除文件 D:\PyCharm 2024.2.3\ai\data\维护保养.txt 对应的 36 个文档
+2026-03-08 23:00:16 - agent - INFO - vector_store.py:134 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\维护保养.txt 加载成功
+2026-03-08 23:00:17 - agent - INFO - vector_store.py:86 - [向量库] 已删除文件 D:\PyCharm 2024.2.3\ai\data\选购指南.txt 对应的 35 个文档
+2026-03-08 23:00:19 - agent - INFO - vector_store.py:134 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\选购指南.txt 加载成功
+2026-03-08 23:00:19 - agent - INFO - knowledge_watcher.py:54 - [监控] 已启动，监控目录：D:\PyCharm 2024.2.3\ai\data
+2026-03-08 23:00:56 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-08 23:00:56 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:00:56 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 空调漏水怎么办
+2026-03-08 23:01:04 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 23:01:04 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '空调漏水原因及解决方法'}
+2026-03-08 23:01:07 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 23:01:07 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-08 23:01:07 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:01:07 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 空调内机漏水的主要原因包括排水管堵塞或破裂、内机安装不水平导致接水盘倾斜。解决方法为疏通或更换排水管，以及调整内机至水平位置。
+2026-03-08 23:11:20 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\故障排除.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:11:20 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:11:20 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:11:20 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\维护保养.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:11:20 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\选购指南.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:11:20 - agent - INFO - knowledge_watcher.py:54 - [监控] 已启动，监控目录：D:\PyCharm 2024.2.3\ai\data
+2026-03-08 23:13:20 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\故障排除.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:13:20 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:13:20 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:13:20 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\维护保养.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:13:20 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\选购指南.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:13:20 - agent - INFO - knowledge_watcher.py:54 - [监控] 已启动，监控目录：D:\PyCharm 2024.2.3\ai\data
+2026-03-08 23:14:45 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-08 23:14:45 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:14:45 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 你好，今天天气如何？
+2026-03-08 23:14:52 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_user_location
+2026-03-08 23:14:52 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 23:14:52 - agent - INFO - middleware.py:21 - [tool monitor]工具get_user_location调用成功
+2026-03-08 23:14:52 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 23:14:52 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:14:52 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 合肥
+2026-03-08 23:14:57 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_weather
+2026-03-08 23:14:57 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'city': '合肥'}
+2026-03-08 23:14:57 - agent - INFO - middleware.py:21 - [tool monitor]工具get_weather调用成功
+2026-03-08 23:14:57 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-08 23:14:57 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:14:57 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 城市合肥天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时内降雨概率极低
+2026-03-08 23:18:01 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 23:18:01 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:18:01 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 空调滤网多久清洗一次？
+2026-03-08 23:18:07 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 23:18:07 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '空调滤网清洗周期'}
+2026-03-08 23:18:10 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 23:18:11 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-08 23:18:11 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:18:11 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 空调滤网建议每2周清洗一次，环境灰尘大时每周清洗；部分资料建议每月清洗一次。若为初效滤网，应每月清洗，破损则立即更换。
+2026-03-08 23:18:40 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-08 23:18:40 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:18:40 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 那如果我家有宠物呢？
+2026-03-08 23:18:45 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 23:18:45 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '宠物家庭 空调滤网 清洗频率'}
+2026-03-08 23:18:48 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 23:18:48 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有9条消息，消息如下：
+2026-03-08 23:18:48 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:18:48 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 有宠物家庭应增加空调滤网清洗频率，建议每2周清洗一次，环境灰尘大时每周清洗；若使用初效滤网，一般每月清洗一次。
+2026-03-08 23:21:52 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\故障排除.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:21:52 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:21:52 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:21:52 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\维护保养.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:21:52 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\选购指南.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:21:52 - agent - INFO - knowledge_watcher.py:54 - [监控] 已启动，监控目录：D:\PyCharm 2024.2.3\ai\data
+2026-03-08 23:22:17 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-08 23:22:17 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:22:17 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 你还记得之前的对话吗
+2026-03-08 23:22:35 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 23:22:35 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:22:35 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 今天天气如何
+2026-03-08 23:22:39 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_user_location
+2026-03-08 23:22:39 - agent - INFO - middleware.py:18 - [tool monitor]参数: {}
+2026-03-08 23:22:39 - agent - INFO - middleware.py:21 - [tool monitor]工具get_user_location调用成功
+2026-03-08 23:22:39 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-08 23:22:39 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:22:39 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 深圳
+2026-03-08 23:22:41 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: get_weather
+2026-03-08 23:22:41 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'city': '深圳'}
+2026-03-08 23:22:41 - agent - INFO - middleware.py:21 - [tool monitor]工具get_weather调用成功
+2026-03-08 23:22:42 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有9条消息，消息如下：
+2026-03-08 23:22:42 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:22:42 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 城市深圳天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时内降雨概率极低
+2026-03-08 23:23:14 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\故障排除.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:23:14 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:23:14 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:23:14 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\维护保养.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:23:14 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\选购指南.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:23:14 - agent - INFO - knowledge_watcher.py:54 - [监控] 已启动，监控目录：D:\PyCharm 2024.2.3\ai\data
+2026-03-08 23:24:01 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-08 23:24:01 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:24:01 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 该如何清洗空调
+2026-03-08 23:24:02 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 23:24:02 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '智能空调清洗方法和步骤'}
+2026-03-08 23:24:04 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 23:24:05 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 23:24:05 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:24:05 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 清洗智能空调的方法包括清洗滤网和蒸发器翅片，使用专用清洁剂，清洗后开启送风模式吹干，或选择带有自清洁功能的空调。
+2026-03-08 23:24:44 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 23:24:44 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:24:44 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: ？
+2026-03-08 23:24:47 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 23:24:47 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '如何清洗空调'}
+2026-03-08 23:24:52 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 23:24:53 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-08 23:24:53 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:24:53 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 清洗空调包括：每月清洗室内机滤网，使用软毛刷或吸尘器清理出风口和回风口灰尘；每年由专业人员深度清洗蒸发器、风轮和接水盘；可使用专用清洁剂清洗蒸发器翅片，之后开启送风模式吹干；室外机冷凝器可用软毛刷、吸尘器或低压水枪（喷雾状）冲洗，避免使用高压水枪以防损坏翅片或导致短路；长时间不用时，应开启送风模式运行2小时吹干内部湿气后断电。
+2026-03-08 23:26:38 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\故障排除.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:26:38 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:26:38 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:26:38 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\维护保养.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:26:38 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\选购指南.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:26:38 - agent - INFO - knowledge_watcher.py:54 - [监控] 已启动，监控目录：D:\PyCharm 2024.2.3\ai\data
+2026-03-08 23:26:47 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-08 23:26:47 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:26:47 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 如何清洗空调
+2026-03-08 23:26:51 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 23:26:51 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '如何清洗空调'}
+2026-03-08 23:26:51 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 23:26:51 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 23:26:51 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:26:51 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 清洗空调包括：每月清洗室内机滤网，使用软毛刷或吸尘器清理出风口和回风口灰尘；每年由专业人员深度清洗蒸发器、风轮和接水盘；可使用专用清洁剂清洗蒸发器翅片，之后开启送风模式吹干；室外机冷凝器可用软毛刷、吸尘器或低压水枪（喷雾状）冲洗，避免使用高压水枪以防损坏翅片或导致短路；长时间不用时，应开启送风模式运行2小时吹干内部湿气后断电。
+2026-03-08 23:29:44 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\故障排除.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:29:44 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:29:44 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:29:44 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\维护保养.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:29:44 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\选购指南.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:29:44 - agent - INFO - knowledge_watcher.py:54 - [监控] 已启动，监控目录：D:\PyCharm 2024.2.3\ai\data
+2026-03-08 23:29:54 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-08 23:29:54 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:29:54 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 怎么清洗空调
+2026-03-08 23:29:55 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 23:29:55 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '智能空调清洗方法和步骤'}
+2026-03-08 23:29:55 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 23:29:55 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 23:29:55 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:29:55 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 清洗智能空调的方法包括清洗滤网和蒸发器翅片，使用专用清洁剂，清洗后开启送风模式吹干，或选择带有自清洁功能的空调。
+2026-03-08 23:31:05 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-08 23:31:05 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:31:05 - agent - INFO - middleware.py:38 - [log_before_model][HumanMessage]: 那要是我养了狗呢
+2026-03-08 23:31:11 - agent - INFO - middleware.py:17 - [tool monitor]执行工具: rag_summarize
+2026-03-08 23:31:11 - agent - INFO - middleware.py:18 - [tool monitor]参数: {'query': '养宠物家庭 空调清洗 宠物毛发'}
+2026-03-08 23:31:14 - agent - INFO - middleware.py:21 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 23:31:14 - agent - INFO - middleware.py:34 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-08 23:31:14 - agent - INFO - middleware.py:37 - [log_before_model]: ----------省略已输出内容----------
+2026-03-08 23:31:14 - agent - INFO - middleware.py:38 - [log_before_model][ToolMessage]: 有宠物家庭应增加空调滤网清洗频率，防止宠物毛发堵塞；建议每2周清洗一次滤网，环境灰尘大时可每周清洗，清洗时用软毛刷轻刷或清水冲洗，晾干后装回。每年至少由专业人员深度清洗蒸发器一次。
+2026-03-08 23:31:35 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\故障排除.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:31:35 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:31:35 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:31:35 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\维护保养.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:31:35 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\选购指南.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:31:35 - agent - INFO - knowledge_watcher.py:54 - [监控] 已启动，监控目录：D:\PyCharm 2024.2.3\ai\data
+2026-03-08 23:36:42 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\故障排除.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:36:42 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:36:42 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\智能空调100问2.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:36:42 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\维护保养.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:36:42 - agent - INFO - vector_store.py:103 - [向量库] 文件 D:\PyCharm 2024.2.3\ai\data\选购指南.txt 未变化（MD5 匹配），跳过
+2026-03-08 23:36:42 - agent - INFO - knowledge_watcher.py:54 - [监控] 已启动，监控目录：D:\PyCharm 2024.2.3\ai\data
